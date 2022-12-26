@@ -13,8 +13,10 @@ import {
   TableHead,
   TablePagination,
   TableRow,
-  Typography
+  Typography,
+  Link
 } from '@mui/material';
+import NextLink from 'next/link';
 import { getInitials } from '../../utils/get-initials';
 
 export const CustomerListResults = ({ customers, ...rest }) => {
@@ -81,19 +83,19 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                   />
                 </TableCell>
                 <TableCell>
-                  Name
+                  Job
                 </TableCell>
                 <TableCell>
-                  Email
+                  Application
                 </TableCell>
                 <TableCell>
-                  Location
+                  Candidate
                 </TableCell>
                 <TableCell>
-                  Phone
+                  Status
                 </TableCell>
                 <TableCell>
-                  Registration date
+                  Comments
                 </TableCell>
               </TableRow>
             </TableHead>
@@ -118,6 +120,38 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                         display: 'flex'
                       }}
                     >
+                      <Typography
+                        color="textPrimary"
+                        variant="body1"
+                      >
+                        <NextLink href={"#"} passHref>
+                          <Link target="_blank" variant="subtitle2" underline="hover">
+                          {customer.jobId}
+                          </Link>
+                        </NextLink>
+                        {` | ${customer.jobTitle} at ${customer.jobOrganization} | ${customer.address.city}, ${customer.address.state}, ${customer.address.country} `}
+                      </Typography>
+                    </Box>
+                  </TableCell>
+                  <TableCell>
+                  <Typography
+                        color="textPrimary"
+                        variant="body1"
+                      >
+                        <NextLink href={"#"} passHref>
+                          <Link target="_blank" variant="subtitle2" underline="hover">
+                            67890
+                          </Link>
+                        </NextLink>
+                      </Typography>
+                  </TableCell>
+                  <TableCell>
+                    <Box
+                      sx={{
+                        alignItems: 'center',
+                        display: 'flex'
+                      }}
+                    >
                       <Avatar
                         src={customer.avatarUrl}
                         sx={{ mr: 2 }}
@@ -128,20 +162,30 @@ export const CustomerListResults = ({ customers, ...rest }) => {
                         color="textPrimary"
                         variant="body1"
                       >
-                        {customer.name}
+                        <NextLink href={"#"} passHref>
+                          <Link target="_blank" variant="subtitle2" underline="hover">
+                            {customer.name}
+                          </Link>
+                        </NextLink>
                       </Typography>
                     </Box>
                   </TableCell>
                   <TableCell>
-                    {customer.email}
+                  <Typography
+                        color="textPrimary"
+                        variant="body1"
+                      >
+                        To be Updated
+                      </Typography>
                   </TableCell>
                   <TableCell>
-                    {`${customer.address.city}, ${customer.address.state}, ${customer.address.country}`}
-                  </TableCell>
-                  <TableCell>
-                    {customer.phone}
-                  </TableCell>
-                  <TableCell>
+                  <Typography
+                        color="textPrimary"
+                        variant="body1"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </Typography>
+                  
                     {format(customer.createdAt, 'dd/MM/yyyy')}
                   </TableCell>
                 </TableRow>
