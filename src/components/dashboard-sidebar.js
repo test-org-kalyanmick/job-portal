@@ -15,6 +15,8 @@ import { Users as UsersIcon } from '../icons/users';
 import { XCircle as XCircleIcon } from '../icons/x-circle';
 import { Logo } from './logo';
 import { NavItem } from './nav-item';
+import Users3 from '@mui/icons-material/Groups3';
+import WorkIcon from '@mui/icons-material/Work';
 
 const items = [
   {
@@ -23,19 +25,24 @@ const items = [
     title: 'Dashboard'
   },
   {
+    href: '/account',
+    icon: (<UserIcon fontSize="small" />),
+    title: 'Profile'
+  },
+  {
+    href: '/jobseekers',
+    icon: (<Users3 fontSize="small" />),
+    title: 'Job Seekers'
+  },
+  {
     href: '/customers',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'Customers'
+    title: 'Interviews'
   },
   {
     href: '/products',
-    icon: (<ShoppingBagIcon fontSize="small" />),
-    title: 'Products'
-  },
-  {
-    href: '/account',
-    icon: (<UserIcon fontSize="small" />),
-    title: 'Account'
+    icon: (<WorkIcon fontSize="small" />),
+    title: 'Jobs'
   },
   {
     href: '/settings',
@@ -47,16 +54,16 @@ const items = [
     icon: (<LockIcon fontSize="small" />),
     title: 'Login'
   },
-  {
-    href: '/register',
-    icon: (<UserAddIcon fontSize="small" />),
-    title: 'Register'
-  },
-  {
-    href: '/404',
-    icon: (<XCircleIcon fontSize="small" />),
-    title: 'Error'
-  }
+  // {
+  //   href: '/register',
+  //   icon: (<UserAddIcon fontSize="small" />),
+  //   title: 'Register'
+  // },
+  // {
+  //   href: '/404',
+  //   icon: (<XCircleIcon fontSize="small" />),
+  //   title: 'Error'
+  // }
 ];
 
 export const DashboardSidebar = (props) => {
@@ -162,7 +169,7 @@ export const DashboardSidebar = (props) => {
           ))}
         </Box>
         <Divider sx={{ borderColor: '#2D3748' }} />
-        <Box
+        {/* <Box
           sx={{
             px: 2,
             py: 3
@@ -211,7 +218,7 @@ export const DashboardSidebar = (props) => {
               Pro Live Preview
             </Button>
           </NextLink>
-        </Box>
+        </Box> */}
       </Box>
     </>
   );
