@@ -13,7 +13,11 @@ export const customers = [
     createdAt: 1555016400000,
     email: 'ekaterina.tankova@devias.io',
     name: 'Ekaterina Tankova',
-    phone: '304-428-3097'
+    phone: '304-428-3097',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -27,7 +31,11 @@ export const customers = [
     createdAt: 1555016400000,
     email: 'cao.yu@devias.io',
     name: 'Cao Yu',
-    phone: '712-351-5711'
+    phone: '712-351-5711',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -41,7 +49,11 @@ export const customers = [
     createdAt: 1555016400000,
     email: 'alexa.richardson@devias.io',
     name: 'Alexa Richardson',
-    phone: '770-635-2682'
+    phone: '770-635-2682',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -55,7 +67,11 @@ export const customers = [
     createdAt: 1554930000000,
     email: 'anje.keizer@devias.io',
     name: 'Anje Keizer',
-    phone: '908-691-3242'
+    phone: '908-691-3242',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -69,7 +85,11 @@ export const customers = [
     createdAt: 1554757200000,
     email: 'clarke.gillebert@devias.io',
     name: 'Clarke Gillebert',
-    phone: '972-333-4106'
+    phone: '972-333-4106',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -83,7 +103,11 @@ export const customers = [
     createdAt: 1554670800000,
     email: 'adam.denisov@devias.io',
     name: 'Adam Denisov',
-    phone: '858-602-3409'
+    phone: '858-602-3409',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -97,7 +121,11 @@ export const customers = [
     createdAt: 1554325200000,
     email: 'ava.gregoraci@devias.io',
     name: 'Ava Gregoraci',
-    phone: '415-907-2647'
+    phone: '415-907-2647',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -111,7 +139,11 @@ export const customers = [
     createdAt: 1523048400000,
     email: 'emilee.simchenko@devias.io',
     name: 'Emilee Simchenko',
-    phone: '702-661-1654'
+    phone: '702-661-1654',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -125,7 +157,11 @@ export const customers = [
     createdAt: 1554702800000,
     email: 'kwak.seong.min@devias.io',
     name: 'Kwak Seong-Min',
-    phone: '313-812-8947'
+    phone: '313-812-8947',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   },
   {
     id: uuid(),
@@ -139,6 +175,10 @@ export const customers = [
     createdAt: 1522702800000,
     email: 'merrile.burgett@devias.io',
     name: 'Merrile Burgett',
-    phone: '801-301-7894'
+    phone: '801-301-7894',
+    jobId: '12345',
+    jobTitle: 'Senior Engineer',
+    jobOrganization: 'Publicis Sapient',
+    jobLocation: 'Bengaluru'
   }
 ];
