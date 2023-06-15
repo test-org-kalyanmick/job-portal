@@ -1,0 +1,10 @@
+global:
+  env: Dev
+  
+charts:
+  - name: chart_1
+    version: 01
+  - name: chart_2
+    version: 01
+  - name: chart_3
+    version: 01
