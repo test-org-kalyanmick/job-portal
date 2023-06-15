@@ -1,0 +1,38 @@
+name: Update YAML file
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update YAML file
+        run: |
+          # Install yq
+          sudo add-apt-repository ppa:rmescandon/yq -y
+          sudo apt update
+          sudo apt install yq -y
+
+          # Update specific property of list item
+          chart_name="chart_1"
+          chart_version="2.0.0"
+          yq e ".charts |= map(if .name == \"$chart_name\" then .version = \"$chart_version\" else . end)" path/to/file.yaml -i
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git add path/to/file.yaml
+          git commit -m "Update YAML file"
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
